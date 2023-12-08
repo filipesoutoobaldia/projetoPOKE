@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Area CSS-->
+
   <link rel="stylesheet" href="./css/login.css">
   <link rel="stylesheet" href="./css/globas.css">
+
   <!--fim Area CSS-->
 
   <title>Pokedex</title>
@@ -28,58 +30,90 @@
   <!--TODAS AS INFORMAÇÕES CONTIDAS NESSE SITE SÃO APENAS PRATICAS DE ESTUDOS COM INFORMAÇÕES REAIS COLHIDAS NO SITE “https://www.pokemon.com/br/pokedex/” O QUAL E O CRIADOR ORIGINAL DE TODOS OS CONTEÚDOS AQUI DIVULGADOS.-->
 
 
-<body>
+  <body>
 
-  <div class="body">
+    <div class="container">
+  
+    <header class="topo">  
+  <img src="./img/banner6.png" alt="banner" class="banimg">
+  <img src="./img/banner6.png" alt="banner2" class="banimg2">
+  </header>
+
+
+<!-- Area Menu-->
+<ul class="menu">
+
+  <ol class="menu__icon">
+    <a href="./index.html" >
+    <img src="./img/home.png" alt="" class="icon">
+      <p>Inicio</p>
+    </a>
+
+  </ol>
+<br>
+  <ol class="menu__icon">
+    <a href="./categorias.html">
+    <img src="./img/dexicon.png" alt="" class="icon">
+      <p>Categorias</p>
+    </a>
+  </ol>
+<br>
+  <ol class="menu__icon">
+    <a href="./login.html">
+    <img src="./img/login.png" alt="" class="icon">
+  <p>Login</p>
+    </a>
+  </ol>
+  <ol>
+    <img src="./img/ban.png" alt="banner" class="dex">
+  </ol>
+</ul>
+
+    <!--Fim Area Menu-->
+  
+      <div class="conteudo">
+
+        <form action="">
+          <div class="log">
+            <h1>Login</h1><br>
+            <label for="fname" class="ltext">E-mail:</label><br>
+            <input type="text" class="input" size="70"><br>
+          
+            <label for="fname" class="ltext">Senha:</label><br>
+            <input type="text" class="input" size="70"><br>
+
+
+            <div class="link">
+              <h4><a href="#" class="lcadatro">Cadastre-se</a></h4>
+          
+            <h4><a href="#" class="lsenha">Esqueceu sua senha?</a></h4>
+          </div>
+
+            <input type="submit" value="Entrar" class="entrar">
+          
+          </form>
+      </div>
+
+      <img src="./img/select.jpg" alt="ash" class="ash">
+    </div>
+
+
+      <div class="rodape">
     
-    <img src="./img/pokedexicon.png" alt="pokedexicon" class="pokeicon">
-    <div class="title">
-<h1>  
-  PokéDex
-</h1>
-</div>
-
-<!--Area Menu-->
-  <ul class="menu">
-    <li class="home">
-      <img src="./img/pokeball.png" alt="" class="iconball">
-      <a href="./index.html" class="home">
-        Home
-      </a>
-
-    </li>
-<br>
-    <li class="">
-      <img src="./img/pokeball.png" alt="" class="iconball">
-      <a href="./categorias.html" class="categorias">
-        Categorias
-      </a>
-    </li>
-<br>
-    <li>
-      <img src="./img/pokeball.png" alt="" class="iconball">
-      <a href="./login.html" class="login">
-        Login
-
-      </a>
-    </li>
-  </ul>
-<!--Fim Area Menu-->
-
-<form action="">
-<div class="log">
-  <h1>Login</h1><br>
-  <label for="fname" class="lname">E-mail:</label><br>
-  <input type="text" class="name" size="70"><br>
-
-  <label for="fname" class="lsenha">Senha:</label><br>
-  <input type="text" class="senha" size="70"><br>
-
-  <h4><a href="#" class="rsenha">Esqueceu sua senha?</a></h4>
-
-  <input type="submit" value="Entrar" class="entrar">
-</div>
-</form>
-
-</body>
-</html>
+      </div>
+  
+      
+      <div class="ban">
+        <img src="./img/banla.jpg" alt="Banner" class="ban">
+      </div>
+      
+      <div class="banner">
+        <img src="./img/banla.jpg" alt="Banner" class="banner">
+      </div>
+    </div>
+  
+  </div>
+  </div>
+  </body>
+  </html>
+  
