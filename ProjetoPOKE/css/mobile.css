@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+
+
+
+/* Area Banners */
+.ban{
+    /*background-color:darkgrey;*/
+      grid-area: ban;
+      width: 216px;
+      height: 800px;
+      margin-left: -1px;
+      display: none;
+    }
+    
+    .banner{
+      /*background-color:darkgrey;*/
+      grid-area: banner;
+      width: 217px;
+      height: 800px;
+      margin-left: -8px;
+      display: none;
+      
+    }
+  
+    .banimg{
+      width: 400px;
+      height: 98px;
+      z-index: -1;
+      display: none;
+    }
+    .banimg2{
+      width: 400px;
+      height: 98px;
+      z-index: -1;
+      margin-left: 840px;
+      display: none;
+      
+    }
+    
+  
+  /* Fim Area Banners */
+  
+  /* Area Rodape */
+    .rodape{
+      background-color: red;
+      grid-area: rodape;
+      height: 30px;
+      display: none;
+    }
+  
+    /* Fim Area Rodape */
+  
+  
+    .topo{
+      background-color: black;
+      grid-area: topo;
+      width: 100%;
+      height: 110px;
+      border-radius: 10px;
+      display: none;
+    }
+  
+  }
