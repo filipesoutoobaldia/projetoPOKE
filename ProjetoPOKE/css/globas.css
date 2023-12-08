@@ -1,0 +1,19 @@
+*{
+  margin: 1px;
+  padding: 1px;
+}
+/* Area Container*/
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px 1060px 100px);
+    grid-template-rows: repeat(1, 30px 50px 1000px);
+    gap: 10px;
+    grid-template-areas:
+    "topo topo topo"
+    ". menu . "
+    "ban conteudo banner"
+    "rodape rodape rodape ";
+
+  }
+
+  /* Fim Area Container*/

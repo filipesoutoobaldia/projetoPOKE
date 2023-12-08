@@ -1,0 +1,484 @@
+.topo{
+  background-color: black;
+  grid-area: topo;
+  width: 100%;
+  height: 110px;
+  border-radius: 10px;
+  
+}
+
+.banimg{
+  width: 200px;
+  height: 98px;
+  z-index: -1;
+}
+.banimg2{
+  width: 200px;
+  height: 98px;
+  z-index: -1;
+  margin-left: 870px;
+  
+}
+
+
+/*Area Menu*/
+
+.menu{
+  background-color:rgb(211, 211, 211);
+  grid-area: menu;
+  display: flex;
+  list-style: none;
+  margin-left: 100px;
+  margin-top: -35px;
+  width: 850px;
+  height: 90px;
+  border-radius: 15px;
+}
+
+.menu__icon:hover{
+  background-color: red;
+  transition: 500ms;
+}
+
+.menu__icon{
+  border: 1px solid black ;
+  width: 110px;
+  height: 80px;
+  margin-left: 70px;
+  display:grid;
+  border-radius: 15px;
+}
+
+ol{
+
+  width: 110px;
+  height: 80px;
+  justify-items: center;
+  align-items: center;
+}
+.icon{
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+.pokeicon{
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin: -35px;
+  margin-left: 40px;
+}
+.dex{
+  width: 200px;
+  height: 50px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+/* Fim Area Menu*/
+
+
+
+
+/* Area conteudo */
+
+.conteudo{
+  grid-area: conteudo;
+  border-radius: 15px;
+}
+.pokedex{
+  width: 450px;
+  z-index: -1;
+}
+.bem{
+  border: 1px solid black;
+  width: 250px;
+  margin-left: 420px;
+  margin-top: -340px;
+  font-size: 50px;
+}
+
+.info_home{
+  border: 1px solid black;
+  width: 400px;
+  margin-top: 100px;
+  margin-left: 450px;
+  font-size: 30px;
+}
+.aviso{
+  border: 1px solid black;
+  width: 700px;
+  margin-top: 110px;
+  margin-left: 50px;
+  font-size: 30px;
+}
+
+
+/* Fim Area conteudo */
+
+
+
+/* Area Banners */
+.ban{
+  /*background-color:darkgrey;*/
+    grid-area: ban;
+    width: 110px;
+    height: 700px;
+    margin-left: 0%;
+  }
+  
+  .banner{
+    /*background-color:darkgrey;*/
+    grid-area: banner;
+    width: 117px;
+    height: 700px;
+    margin-left: -8px;
+    
+  }
+
+/* Fim Area Banners */
+
+/* Area Rodape */
+  .rodape{
+    background-color: red;
+    grid-area: rodape;
+    height: 30px;
+    margin-top: -300px;
+  }
+
+  /* Fim Area Rodape */
+
+
+
+
+  /* Area Mobile*/
+
+
+@media screen and (max-width: 480px)  {
+  .container{
+
+    display: grid;
+    grid-template-columns: (1, 200px);
+    grid-template-rows:repeat(1, 40px );
+    gap: 20px;
+    grid-template-areas:
+    "menu"
+    "conteudo";
+    
+  }
+
+  /*Area Menu*/
+
+.menu{
+  background-color:rgb(211, 211, 211);
+  grid-area: menu;
+  display: flex;
+  list-style: none;
+  margin-left: -110px;
+  margin-top: -40px;
+  width: 300px;
+  height: 50px;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.menu p{
+  display: none;
+}
+
+
+.menu__icon{
+  border: 1px solid black ;
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  display:grid;
+  border-radius: 15px;
+}
+
+
+.icon{
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+.pokeicon{
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin: -35px;
+  margin-left: 40px;
+}
+.dex{
+  width: 200px;
+  height: 25px;
+  margin-left: 25px;
+  margin-top: 10px;
+  display: none;
+}
+/* Fim Area Menu*/
+
+/* Area conteudo */
+
+.conteudo{
+  grid-area: conteudo;
+  margin-top: -30px;
+  width: 294px;
+  border-radius: 15px;
+  margin-left: -100px;
+  display: grid;
+
+}
+.pokedex{
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+.bem{
+  border: 1px solid black;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: -250px;
+  font-size: 20px;
+}
+
+.info_home{
+  border: 1px solid black;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.aviso{
+  border: 1px solid black;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+
+/* Area Banners */
+.ban{
+  /*background-color:darkgrey;*/
+    grid-area: ban;
+    width: 216px;
+    height: 800px;
+    margin-left: -1px;
+    display: none;
+  }
+  
+  .banner{
+    /*background-color:darkgrey;*/
+    grid-area: banner;
+    width: 217px;
+    height: 800px;
+    margin-left: -8px;
+    display: none;
+    
+  }
+
+  .banimg{
+    width: 400px;
+    height: 98px;
+    z-index: -1;
+    display: none;
+  }
+  .banimg2{
+    width: 400px;
+    height: 98px;
+    z-index: -1;
+    margin-left: 840px;
+    display: none;
+    
+  }
+  
+
+/* Fim Area Banners */
+
+/* Area Rodape */
+  .rodape{
+    background-color: red;
+    grid-area: rodape;
+    height: 30px;
+    display: none;
+  }
+
+  /* Fim Area Rodape */
+
+
+  .topo{
+    background-color: black;
+    grid-area: topo;
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width:768px ){
+  .container{
+
+    display: grid;
+    grid-template-columns: (1, 200px);
+    grid-template-rows:repeat(1, 40px );
+    gap: 20px;
+    grid-template-areas:
+    "menu"
+    "conteudo";
+    
+  }
+
+  /*Area Menu*/
+
+.menu{
+  background-color:rgb(211, 211, 211);
+  grid-area: menu;
+  display: flex;
+  list-style: none;
+  margin-left: -110px;
+  margin-top: -40px;
+  width: 300px;
+  height: 50px;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 15px;
+}
+.menu p{
+  display: none;
+}
+
+
+.menu__icon{
+  border: 1px solid black ;
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  display:grid;
+  border-radius: 15px;
+}
+
+
+.icon{
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+.pokeicon{
+  width: 70px;
+  height: 70px;
+  position: relative;
+  margin: -35px;
+  margin-left: 40px;
+}
+.dex{
+  width: 200px;
+  height: 25px;
+  margin-left: 25px;
+  margin-top: 10px;
+  display: none;
+}
+/* Fim Area Menu*/
+
+/* Area conteudo */
+
+.conteudo{
+  grid-area: conteudo;
+  margin-top: -30px;
+  width: 294px;
+  border-radius: 15px;
+  margin-left: -100px;
+  display: grid;
+
+}
+.pokedex{
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+}
+.bem{
+  border: 1px solid black;
+  width: 100px;
+  margin-left: 10px;
+  margin-top: -250px;
+  font-size: 20px;
+}
+
+.info_home{
+  border: 1px solid black;
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+.aviso{
+  border: 1px solid black;
+  width: 250px;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-size: 15px;
+}
+
+
+/* Area Banners */
+.ban{
+  /*background-color:darkgrey;*/
+    grid-area: ban;
+    width: 216px;
+    height: 800px;
+    margin-left: -1px;
+    display: none;
+  }
+  
+  .banner{
+    /*background-color:darkgrey;*/
+    grid-area: banner;
+    width: 217px;
+    height: 800px;
+    margin-left: -8px;
+    display: none;
+    
+  }
+
+  .banimg{
+    width: 400px;
+    height: 98px;
+    z-index: -1;
+    display: none;
+  }
+  .banimg2{
+    width: 400px;
+    height: 98px;
+    z-index: -1;
+    margin-left: 840px;
+    display: none;
+    
+  }
+  
+
+/* Fim Area Banners */
+
+/* Area Rodape */
+  .rodape{
+    background-color: red;
+    grid-area: rodape;
+    height: 30px;
+    display: none;
+  }
+
+  /* Fim Area Rodape */
+
+
+  .topo{
+    background-color: black;
+    grid-area: topo;
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    display: none;
+  }
+
+
+}
